@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sticky Template</title>
+
+    <script src="scripts/lottie.js" data-skip="true"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/thimble.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="mouse_trap">
+        <h2>mouse above this line</h2>
+    </div>
+    <div class="sticky_template_container flex_center">
+        <h1 class="text"><span class="bold">Animations on scroll.</span> Each animation is an object in the object animations with a unique id that places it in the html, a json file and time duration. The container div is 100vh with overflow-y scroll, it contains a 200vh div (.height), containing a div that is sticky (.stuff) to the top of the page containing the animation (.bodymovin) that is triggered on scroll. <span class="bold">Problems:</span>  the position of the mouse effects when the interior scrolll is triggered. <span class="bold">Fixed:</span>  how to load multiple animations that can be scrolled to and then animated on scroll.  </h1>
+    </div>
+
+    <div class="sticky_template_container">
+        <div class="height">
+            <div class="stuff flex_row">
+                <div class="category_header">
+                    <h1>1. HEADLINE</h1>
+                </div>
+                <div class="animation" id="bodymovin">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo, turpis vitae lacinia suscipit, felis mi pharetra velit, in blandit est ligula nec felis. Nulla facilisi. Donec tempor a metus vel laoreet. Integer tempor mi est, eget aliquet quam efficitur vulputate. Sed sem nisi, convallis quis leo bibendum, mattis pharetra nibh.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sticky_template_container">
+        <div class="height">
+            <div class="stuff">
+                <div class="category_header">
+                    <h1>2. HEADLINE</h1>
+                </div>
+                <div class="animation" id="bodymovin2">
+                </div>
+                <img src="img/img.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="sticky_template_container">
+        <div class="height">
+            <div class="stuff">
+                <div class="category_header">
+                    <h1>3. HEADLINE</h1>
+                </div>
+                <div class="animation" id="bodymovin3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sticky_template_container">
+        <div class="height">
+            <div class="stuff">
+                <div class="category_header">
+                    <h1>4. HEADLINE</h1>
+                </div>
+                <div class="animation" id="bodymovin4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sticky_template_container">
+        <h1>END</h1>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>

@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+.bold{
+    font-weight: 600;
+}
+.pad20 {
+    padding: 20px;
+}
+
+
+.mouse_trap{
+    position: fixed;
+    border-top: black solid;
+    padding: 5px;
+    right: 10%;
+    top: 5%;   
+    z-index: 200;
+    
+}
+
+.sticky_template_container {
+    height: 100vh;
+    padding: 20px;
+    border: thin black solid;
+    overflow-y: scroll;
+}
+
+.height {
+    height: 200vh;
+    border: red thin solid;
+}
+
+.stuff{
+    position: sticky;
+    top: 20px;
+
+}
+.flex_row{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    width: 30vw;
+}
+/*
+
+.sticky_mid {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: -5;
+    top: 10vmin;
+    align-self: center;
+}
+
+.sticky_bot {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 10vmin;
+    align-self: flex-end;
+}
+*/
+
+/*medium media query matching flex*/
+@media only screen and (max-width: 1024px) and (min-width: 640px) {
+
+    body {
+        background-color: aqua;
+    }
+
+    /*sticky template medium*/
+.sticky_template_container {
+    height: 100vh;
+    padding: 20px;
+    border: thin black solid;
+    overflow-y: scroll;
+}
+    .sticky_top {
+        position: sticky;
+        top: 0vmin;
+    }
+
+    .category_header {
+        writing-mode: vertical-lr;
+    }
+
+    .sticky_mid {
+        position: relative;
+        z-index: -5;
+        top: 0vmin;
+
+    }
+
+    .sticky_bot {
+        position: relative;
+        bottom: 0vmin;
+
+    }
+
+}
+
+/*small media query matching flex*/
+@media only screen and (max-width: 640px) {
+
+    body {
+        background-color: peachpuff;
+    }
+
+    /*sticky template small*/
+
+.sticky_template_container {
+    height: 100vh;
+    padding: 20px;
+    border: thin black solid;
+    overflow-y: scroll;
+}
+    .sticky_top {
+        position: relative;
+        top: 0;
+    }
+
+    .sticky_mid {
+        position: relative;
+        z-index: 0;
+        top: 0;
+        align-self: center;
+    }
+
+    .sticky_bot {
+        position: relative;
+        bottom: 0;
+        align-self: center;
+    }
+}
